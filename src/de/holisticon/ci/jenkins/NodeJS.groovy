@@ -40,7 +40,6 @@ def nvmNode(command, opts = null) {
     """
 }
 
-@NonCPS
 def readJson(text) {
     def response = new groovy.json.JsonSlurperClassic().parseText(text)
     jsonSlurper = null
