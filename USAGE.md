@@ -6,10 +6,11 @@
     - [Build](#build)
     - [NodeJS](#nodejs)
     - [Maven](#maven)
-    - [<a name="git"></a> Git](#-git)
+    - [Git](#git)
     - [GitSecret](#gitsecret)
     - [Utils](#utils)
     - [Xcode](#xcode)
+
 ## Usage
 
 ### Ansible
@@ -85,7 +86,7 @@ node {
 
 ```
 
-### <a name="git"></a> Git
+### Git
 ```
 #!/usr/bin/groovy
 @Library('holisticon-build-library') _
