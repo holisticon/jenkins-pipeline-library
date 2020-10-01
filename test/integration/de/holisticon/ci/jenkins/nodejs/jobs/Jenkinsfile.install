@@ -1,0 +1,7 @@
+def nodeJS = load "./vars/nodeJS.groovy"
+
+def execute() {
+    stage('Prepare') {
+        nodeJS.nvm('install')
+    }
+}

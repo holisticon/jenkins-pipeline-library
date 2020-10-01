@@ -1,5 +1,7 @@
 #!/usr/bin/groovy
-package de.holisticon.ci.jenkins;
+package de.holisticon.ci.jenkins
+
+import static de.holisticon.ci.jenkins.utils.EscapeUtil.escapeGitBranchName
 
 def isDevelopBranch() {
     env.BRANCH_NAME == 'develop'
@@ -16,3 +18,9 @@ def isSupportBranch() {
 def isFeatureBranch() {
     env.BRANCH_NAME.startsWith('feature')
 }
+
+def getBranchNameEscaped() {
+    return escapeGitBranchName(env.BRANCH_NAME)
+}
+
+return this;

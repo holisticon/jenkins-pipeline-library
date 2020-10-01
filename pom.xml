@@ -33,44 +33,6 @@
         <maven.javadoc.plugin.version>2.10.3</maven.javadoc.plugin.version>
     </properties>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>holi-snapshots</id>
-            <url>https://nexus.holisticon.de/repository/maven-snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>holi-releases</id>
-            <url>https://nexus.holisticon.de/repository/maven-releases</url>
-        </repository>
-    </distributionManagement>
-
-
-    <repositories>
-        <repository>
-            <id>holi-fetch-all</id>
-            <url>https://nexus.holisticon.de/repository/fetch-all/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>holi-fetch-all</id>
-            <url>https://nexus.holisticon.de/repository/fetch-all/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
-
-
     <build>
         <defaultGoal>clean install</defaultGoal>
 
